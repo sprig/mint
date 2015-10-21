@@ -43,8 +43,6 @@ style: center
 </div>
 <div id="upcoming" class="section upcoming bg-mint2">
   <div class="container {{page.style}}">
-    <div class="container {{page.style}}">
-    <h3><a href="lectures">MINT Distinguished Lectures</a></h3>
     {% assign upcoming_fl = false %}
     {% assign upcoming_sl = false %}
     {% for post in site.posts reversed %}
@@ -57,7 +55,10 @@ style: center
     {% assign upcoming_fl = true %}
     {% endif %}
 
+    <div class="container {{page.style}}">
+    <h3><a href="lectures">MINT Distinguished Lectures</a></h3>
     {{ post.excerpt }}
+    </div>
 
 
     {% if upcoming_sl == true %}
@@ -67,14 +68,10 @@ style: center
     {% endif %}
     {% endfor %}
     {% if upcoming_fl == false %}
-    <h4>No upcoming lectures scheduled</h4>
     {% endif %}
-    </div>
 
     <hr/>
 
-    <div class="container {{page.style}}">
-    <h3><a href="events">Events supported by MINT</a></h3>
     {% assign upcoming_fl = false %}
     {% assign upcoming_sl = false %}
     {% for post in site.posts reversed %}
@@ -87,7 +84,10 @@ style: center
     {% assign upcoming_fl = true %}
     {% endif %}
 
+    <div class="container {{page.style}}">
+    <h3><a href="events">Events supported by MINT</a></h3>
     {{ post.excerpt }}
+    </div>
 
 
     {% if upcoming_sl == true %}
@@ -97,9 +97,7 @@ style: center
     {% endif %}
     {% endfor %}
     {% if upcoming_fl == false %}
-    <h4>No upcoming events scheduled</h4>
     {% endif %}
-    </div>
 
   </div>
 </div>
