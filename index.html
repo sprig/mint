@@ -56,8 +56,19 @@ style: center
     {% endif %}
 
     <div class="container {{page.style}}">
-    <h3><a href="lectures">MINT Distinguished Lectures</a></h3>
-    {{ post.excerpt }}
+    <h3><a href="lectures">Upcoming MINT Distinguished Lectures</a></h3>
+
+  <input type="checkbox" id="toggle-{{id}}" class="toggle">
+    <div id="excerpt-{{id}}" class="container excerpt">
+      {{ post.excerpt }}
+      </div>
+  <label for="toggle-{{id}}" onclick>
+  <div id="button-{{id}}" class="container center"></div>
+  </label>
+  <div id="content-{{id}}" class="container {{ post.style }} content">
+    {{ post.content }}
+  </div>
+
     </div>
 
 
@@ -85,7 +96,7 @@ style: center
     {% endif %}
 
     <div class="container {{page.style}}">
-    <h3><a href="events">Events supported by MINT</a></h3>
+    <h3><a href="events">Upcoming Events Supported by MINT</a></h3>
     {{ post.excerpt }}
     </div>
 

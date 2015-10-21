@@ -24,7 +24,7 @@ fa-icon: mortar-board
       {{ page.excerpt }}
       </div>
   <label for="toggle-{{id}}" onclick>
-  <div id="button-{{id}}" class="container center">Display Abstracts</div>
+  <div id="button-{{id}}" class="container center"></div>
   </label>
   <div id="content-{{id}}" class="container {{ page.style }} content">
     {{ page.content }}
