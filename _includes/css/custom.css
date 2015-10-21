@@ -3,6 +3,11 @@
     font-weight: bold;
 }
 
+.title {
+    color: black;
+
+}
+
 .ctr {
     display: block;
     margin-left: auto;

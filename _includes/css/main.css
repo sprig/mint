@@ -605,6 +605,16 @@ tbody:hover > tr:hover td {
   font-size: 25px;
 }
 
+#Home li {
+    text-align: left;
+}
+
+@media (min-width: 600px) {
+    #coordinators-div {
+	margin-right: -8%;
+	margin-left: 8%;
+    }
+}
 .section {
   padding-bottom: 0px;
 }
